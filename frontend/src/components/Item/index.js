@@ -56,10 +56,14 @@ class Item extends React.Component {
                 className="item-img"
                 style={{ height: "500px", width: "100%", borderRadius: "6px" }}
               />
-              : <p>There is no image to show.</p>
-  }
+              : 
+              <img src="/placeholder.png" 
+                alt="placeholder"
+                className="item-img"
+                style={{ height: "500px", width: "100%", borderRadius: "6px" }}
+              />
+              }
             </div>
-
             <div className="col-6">
               <h1>{this.props.item.title}</h1>
               <ItemMeta item={this.props.item} canModify={canModify} />
